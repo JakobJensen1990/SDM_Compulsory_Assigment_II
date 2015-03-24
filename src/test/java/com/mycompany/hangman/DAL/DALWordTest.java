@@ -17,8 +17,9 @@ import static org.junit.Assert.*;
  * @author Kevin
  */
 public class DALWordTest {
-    
+    DALWord dw;
     public DALWordTest() {
+        dw = new DALWord();
     }
     
     /**
@@ -28,6 +29,7 @@ public class DALWordTest {
     public void testGetRandomWord() {
         System.out.println("getRandomWord");
         DALWord instance = new DALWord();
+        instance.populateWords();
         String expResult = "";
         String result = instance.getRandomWord();
         assertNotEquals(expResult, result);
@@ -41,6 +43,7 @@ public class DALWordTest {
     public void testGetSecretWordForNotEmpty() {
         System.out.println("getSecretWord");
         DALWord instance = new DALWord();
+        instance.populateWords();
         String expResult = "";
         String result = instance.getSecretWord();
         assertNotEquals(expResult, result);
