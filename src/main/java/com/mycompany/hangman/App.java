@@ -2,8 +2,10 @@ package com.mycompany.hangman;
 
 public class App 
 {
+    
     public static void main( String[] args )
     {
-            System.out.println( "Hello World!" );
+           GameGui game = new GameGui();
+           game.startGame();
     }
 }
