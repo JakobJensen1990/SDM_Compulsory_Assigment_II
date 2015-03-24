@@ -33,4 +33,42 @@ public class DALWordTest {
         assertNotEquals(expResult, result);
     }
     
+    /**
+     * Test of getSecretWord method, of class DALWord.
+     * Test for string is not empty
+     */
+    @Test
+    public void testGetSecretWordForNotEmpty() {
+        System.out.println("getSecretWord");
+        DALWord instance = new DALWord();
+        String expResult = "";
+        String result = instance.getSecretWord();
+        assertNotEquals(expResult, result);
+    }
+    
+    /**
+     * Test of getSecretWord method, of class DALWord.
+     * Test for string length is correct
+     */
+    @Test
+    public void testGetSecretWordLengthIsZero() {
+        System.out.println("getSecretWord");
+        DALWord instance = new DALWord();
+        int result = instance.testGetSecretWord("").length();
+        int expResult = 0;
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of getSecretWord method, of class DALWord.
+     * Test for string length is correct
+     */
+    @Test
+    public void testGetSecretWordLength() {
+        System.out.println("getSecretWord");
+        DALWord instance = new DALWord();
+        int result = instance.testGetSecretWord("Lastbil").length();
+        int expResult = 7;
+        assertEquals(expResult, result);
+    }
 }
