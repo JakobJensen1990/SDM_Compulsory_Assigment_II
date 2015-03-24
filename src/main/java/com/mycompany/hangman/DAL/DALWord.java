@@ -12,6 +12,7 @@ import java.util.Random;
  * @author Jacob
  */
 public class DALWord {
+    String theWord;
     
     String[] randomWords = {"Etagehus","Benzin","McDonalds","Statue",
         "Pizzabil","Generalforsamlingsvedtægtsændringsforslagsstillerne",
@@ -21,4 +22,13 @@ public class DALWord {
         return randomWords[new Random().nextInt(randomWords.length-1)];
     }
     
+    public String getSecretWord() {
+        if (theWord.isEmpty()) 
+            getRandomWord();
+        StringBuilder sb = new StringBuilder();
+        for(char c : theWord.toCharArray()) {
+            sb.append("*");
+        }
+        return sb.toString();
+    }
 }
