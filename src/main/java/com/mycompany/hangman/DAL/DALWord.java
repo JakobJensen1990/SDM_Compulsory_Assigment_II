@@ -13,23 +13,35 @@ import java.util.Random;
  */
 public class DALWord {
     String theWord = "";
+    String secretWord = "";
     
     String[] randomWords = {"Etagehus","Benzin","McDonalds","Statue",
         "Pizzabil","Generalforsamlingsvedtægtsændringsforslagsstillerne",
         "Rustbunke","Sommerfestival","Baghoved","Bageri","Baconsandwich"};
     
     public String getRandomWord() {
-        return theWord = randomWords[new Random().nextInt(randomWords.length-1)];
+        return theWord;
     }
     
-    public String getSecretWord() {
+    private void populateTheWord() {
         if (theWord.isEmpty()) 
-            getRandomWord();
+            theWord = randomWords[new Random().nextInt(randomWords.length-1)];
+    }
+    
+    private void populateSecretWord() {
         StringBuilder sb = new StringBuilder(theWord.length());
         for(char c: theWord.toCharArray()) {
             sb.append("*");
         }
-        return sb.toString();
+        secretWord = sb.toString();
+    }
+    public void populateWords() {
+        populateTheWord();
+        populateSecretWord();
+    }
+    
+    public String getSecretWord() {
+        return secretWord;
     }
     
     public String testGetSecretWord(String localWord) {

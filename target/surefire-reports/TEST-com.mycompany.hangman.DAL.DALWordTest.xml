@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.mycompany.hangman.DAL.DALWordTest" time="0.229" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="com.mycompany.hangman.DAL.DALWordTest" time="0.235" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.0.2\java\maven\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_31\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Git\cmd;C:\Program Files\nodejs\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Ruby21-x64\bin;C:\Program Files\Boot2Docker for Windows;C:\Users\Kevin\AppData\Roaming\npm;."/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_31\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.mycompany.hangman.DAL.DALWordTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.mycompany.hangman.DAL.DALWordTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="user.language.format" value="da"/>
@@ -64,8 +64,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordLength" time="0.008"/>
+  <testcase classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordLength" time="0"/>
   <testcase classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordForNotEmpty" time="0"/>
   <testcase classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordLengthIsZero" time="0"/>
-  <testcase classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetRandomWord" time="0.006"/>
+  <testcase classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetRandomWord" time="0"/>
 </testsuite>
