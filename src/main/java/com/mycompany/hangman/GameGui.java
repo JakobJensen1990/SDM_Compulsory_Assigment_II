@@ -1,28 +1,44 @@
 package com.mycompany.hangman;
 
+import com.mycompany.hangman.DAL.DALWord;
+import java.util.Scanner;
+
 /**
  *
  * @author Jacob
  */
 public class GameGui {
 
+    DALWord dalWord;
     boolean stillPlaying = true;
-    String answer = "flot";
+    String answer = "";
+    String secret = "";
     int attempts = 0;
     int remainingAttempts = 7;
 
-    public void startGame() {
-        System.out.println("Welcome to Hangman");
-        System.out.println("You have " + remainingAttempts + " attempts to solve the word.");
+    public GameGui() {
+        dalWord = new DALWord();
     }
 
-    public void testForWinner(String guess) {
+    public void startGame() {
+        answer = dalWord.getRandomWord();
+        System.out.println("Welcome to Hangman");
+        System.out.println("You have " + remainingAttempts + " attempts to solve the word.");
+
+        while (stillPlaying) {
+
+        }
+    }
+
+    public void checkForWinner(String guess) {
         if (guess.equals(answer)) {
             stillPlaying = false;
             gameWon();
         }
         if (attempts == 7) {
             stillPlaying = false;
+            System.out.println("You have used all available attempts!");
+            System.out.println("Please try again.");
             newGame();
         }
     }
@@ -33,16 +49,21 @@ public class GameGui {
         System.out.println("Using " + attempts + "attempts.");
     }
 
-    private void newGame() {
+    public void newGame() {
         System.out.println("Want to play a new game?");
         System.out.println("type 'y'");
-        //read char her
-        String s = "reader her!";
+        String s = stringScanner();
         if (s == "y") {
             startGame();
         } else {
             System.out.println("Thank you for playing");
+            System.exit(0);
         }
+    }
+
+    public String stringScanner() {
+        Scanner s = new Scanner(System.in);
+        return s.nextLine();
     }
 
 }
