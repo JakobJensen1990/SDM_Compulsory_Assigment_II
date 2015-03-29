@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author André Thy
+ * @author André Thy2
  */
 public class GameGui {
 
