@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.019" errors="0" skipped="0" tests="4" name="com.mycompany.hangman.DAL.DALWordTest">
+<testsuite failures="0" time="0.203" errors="0" skipped="0" tests="4" name="com.mycompany.hangman.DAL.DALWordTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_40\jre\bin"/>
@@ -15,6 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="com.mycompany.hangman.DAL.DALWordTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\Kaj\Brackets\SDM_Compulsory_Assigment_II"/>
     <property name="java.runtime.version" value="1.7.0_40-b43"/>
@@ -44,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_40\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.mycompany.hangman.DAL.DALWordTest test-compile surefire:test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="user.language.format" value="da"/>
@@ -62,8 +63,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.001" classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordLength"/>
-  <testcase time="0.001" classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordForNotEmpty"/>
+  <testcase time="0.002" classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordLength"/>
+  <testcase time="0" classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordForNotEmpty"/>
   <testcase time="0" classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetSecretWordLengthIsZero"/>
   <testcase time="0" classname="com.mycompany.hangman.DAL.DALWordTest" name="testGetRandomWord"/>
 </testsuite>
