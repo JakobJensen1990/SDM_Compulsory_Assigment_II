@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Kevin
+ * @author André Thy
  */
 public class DALWordTest {
     DALWord dw;
