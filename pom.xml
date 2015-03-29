@@ -34,7 +34,7 @@
                     </formats>
                     <instrumentation>
                     <excludes>
-                        <exclude>src/main/java/com/mycompany/hangman</exclude>
+                        <exclude>com/mycompany/hangman</exclude>
                     </excludes>
                 </instrumentation>
                 </configuration>
