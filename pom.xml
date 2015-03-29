@@ -34,7 +34,7 @@
                     </formats>
                     <instrumentation>
                        <ignores>
-                            <ignore>src/main</ignore>
+                            <ignore>src/main/*</ignore>
                              <ignore>com.mycompany.hangman.*</ignore>
                         </ignores>
                     <excludes>
