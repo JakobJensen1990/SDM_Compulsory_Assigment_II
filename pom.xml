@@ -33,6 +33,9 @@
                         <format>xml</format>
                     </formats>
                     <instrumentation>
+                       <ignores>
+                            <ignore>com/mycompany/hangman</ignore>
+                        </ignores>
                     <excludes>
                         <exclude>com/mycompany/hangman</exclude>
                     </excludes>
