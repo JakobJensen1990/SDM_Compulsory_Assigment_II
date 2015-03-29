@@ -35,11 +35,15 @@
                     <instrumentation>
                        <ignores>
                             <ignore>com/mycompany/hangman</ignore>
+                            <ignore>com.mycompany.hangman</ignore>
                             <ignore>src/main</ignore>
+                            <ignore>src.main</ignore>
                         </ignores>
                     <excludes>
                         <exclude>com/mycompany/hangman</exclude>
+                        <exclude>com.mycompany.hangman</exclude>
                         <exclude>src/main</exclude>
+                          <exclude>src.main</exclude>
                     </excludes>
                 </instrumentation>
                 </configuration>
