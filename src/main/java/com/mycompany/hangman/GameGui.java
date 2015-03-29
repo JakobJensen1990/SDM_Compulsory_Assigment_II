@@ -42,8 +42,7 @@ public class GameGui {
             usedLetters.add(c);
             System.out.println("Used letters: " + usedLetters);
             checkSecretWord(c);
-            attempts += 1;
-            remainingAttempts -= 1;
+
             System.out.println(secret);
             System.out.println("Attempts left: " + remainingAttempts);
         }
@@ -83,16 +82,26 @@ public class GameGui {
 
     private char charScanner() {
         Scanner s = new Scanner(System.in);
-        return s.next(".").charAt(0);
+        return s.next().charAt(0);
     }
 
     private void checkSecretWord(char c) {
+        int counter = 0;
         for (int i = 0; i < answer.length(); i++) {
             if (answer.charAt(i) == c) {
                 String theWord = secret.substring(0, i) + c + secret.substring(i + 1);
                 secret = theWord;
+                
+            }
+            else{
+                counter++;
             }
         }
+        if (counter == answer.length()){
+             remainingAttempts -= 1;
+        }
+        attempts += 1;
+
         checkForWinner(secret);
     }
 }
