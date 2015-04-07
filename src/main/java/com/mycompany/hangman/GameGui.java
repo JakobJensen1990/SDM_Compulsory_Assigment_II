@@ -1,41 +1,59 @@
 package com.mycompany.hangman;
 
 import com.mycompany.hangman.DAL.DALWord;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  *
- * @author Jacob
+ * @author André Thy10
  */
 public class GameGui {
 
     DALWord dalWord;
-    boolean stillPlaying = true;
+    boolean stillPlaying;
     String answer = "";
     String secret = "";
-    int attempts = 0;
-    int remainingAttempts = 7;
+    int attempts;
+    int remainingAttempts;
+    final int LOSINGCONDITION = 0;
+    ArrayList<Character> usedLetters;
 
     public GameGui() {
         dalWord = new DALWord();
     }
 
     public void startGame() {
-        answer = dalWord.getRandomWord();
-        System.out.println("Welcome to Hangman");
+        stillPlaying = true;
+        usedLetters = new ArrayList<Character>();
+        dalWord.populateWords();
+        answer = dalWord.getRandomWord().toLowerCase();
+        secret = dalWord.getSecretWord();
+        attempts = 0;
+        remainingAttempts = 15;
+        System.out.println("Welcome to Hangman\n");
+        System.out.println("The secret word is: " + secret);
+        System.out.println(answer);
         System.out.println("You have " + remainingAttempts + " attempts to solve the word.");
+        System.out.println("Type a char to start");
 
         while (stillPlaying) {
+            char c = charScanner();
+            usedLetters.add(c);
+            System.out.println("Used letters: " + usedLetters);
+            checkSecretWord(c);
 
+            System.out.println(secret);
+            System.out.println("Attempts left: " + remainingAttempts);
         }
     }
 
-    public void checkForWinner(String guess) {
+    private void checkForWinner(String guess) {
         if (guess.equals(answer)) {
             stillPlaying = false;
             gameWon();
         }
-        if (attempts == 7) {
+        if (remainingAttempts == LOSINGCONDITION) {
             stillPlaying = false;
             System.out.println("You have used all available attempts!");
             System.out.println("Please try again.");
@@ -43,17 +61,18 @@ public class GameGui {
         }
     }
 
-    public void gameWon() {
+    private void gameWon() {
         System.out.println("Congratulations");
         System.out.println("You guessed it!");
-        System.out.println("Using " + attempts + "attempts.");
+        System.out.println("Using " + attempts + " attempts.");
+        newGame();
     }
 
-    public void newGame() {
+    private void newGame() {
         System.out.println("Want to play a new game?");
         System.out.println("type 'y'");
-        String s = stringScanner();
-        if (s == "y") {
+        char c = charScanner();
+        if (c == 'y') {
             startGame();
         } else {
             System.out.println("Thank you for playing");
@@ -61,9 +80,28 @@ public class GameGui {
         }
     }
 
-    public String stringScanner() {
+    private char charScanner() {
         Scanner s = new Scanner(System.in);
-        return s.nextLine();
+        return s.next().charAt(0);
     }
 
+    private void checkSecretWord(char c) {
+        int counter = 0;
+        for (int i = 0; i < answer.length(); i++) {
+            if (answer.charAt(i) == c) {
+                String theWord = secret.substring(0, i) + c + secret.substring(i + 1);
+                secret = theWord;
+                
+            }
+            else{
+                counter++;
+            }
+        }
+        if (counter == answer.length()){
+             remainingAttempts -= 1;
+        }
+        attempts += 1;
+
+        checkForWinner(secret);
+    }
 }

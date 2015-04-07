@@ -5,16 +5,12 @@
  */
 package com.mycompany.hangman.DAL;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
  *
- * @author Kevin
+ * @author André Thy 2
  */
 public class DALWordTest {
     DALWord dw;
