@@ -33,7 +33,7 @@ public class GameGui {
         remainingAttempts = 15;
         System.out.println("Welcome to Hangman\n");
         System.out.println("The secret word is: " + secret);
-        System.out.println(answer);
+//        System.out.println(answer);
         System.out.println("You have " + remainingAttempts + " attempts to solve the word.");
         System.out.println("Type a char to start");
 
