@@ -46,8 +46,8 @@
                     </formats>
                     <instrumentation>
                         <excludes>
-                            <exclude>com/mycompany/hangman/**/*.java</exclude>
-                            <exclude>com.mycompany.hangman.**.*.java</exclude>
+                            <exclude>com/mycompany/hangman/**/*.class</exclude>
+                            <exclude>com.mycompany.hangman.**.*.class</exclude>
                         </excludes>
                     </instrumentation>
                 </configuration>
