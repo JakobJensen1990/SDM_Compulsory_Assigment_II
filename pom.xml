@@ -47,6 +47,7 @@
                     <instrumentation>
                         <excludes>
                             <exclude>com/mycompany/hangman/**/*.java</exclude>
+                            <exclude>com.mycompany.hangman.**.*.java</exclude>
                         </excludes>
                     </instrumentation>
                 </configuration>
