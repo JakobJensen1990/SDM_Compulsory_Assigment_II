@@ -55,8 +55,8 @@
                         <goals>
                             <goal>clean </goal>
                             <goal>cobertura</goal>
-                            <phase>package</phase>
                         </goals>
+                        <phase>package</phase>
                     </execution>
                 </executions>
             </plugin>
