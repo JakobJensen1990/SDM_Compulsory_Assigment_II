@@ -46,13 +46,21 @@
                     </formats>
                     <instrumentation>
                        <ignores>
-                            <ignore>**/src/main/**</ignore>
+                             <ignore>**/src/main/**</ignore>
                              <ignore>**/com.mycompany.hangman/**</ignore>
                              <ignore>com.mycompany.hangman.App.java</ignore>
                              <ignore>com.mycompany.hangman.GameGui.java</ignore>
                         </ignores>
-                    
-                </instrumentation>
+                    <exludes>
+                        <exlude> com.mycompany.hangman.App*.java</exlude>
+                        <exlude> com.mycompany.hangman.GameGui*.java</exlude>
+                        <exlude> com.mycompany.hangman.**</exlude>
+                        <exlude> com.mycompany.hangman/**</exlude>
+                        <exlude> com.mycompany.hangman.App*.class</exlude>
+                        <exlude> **/com.mycompany.hangman.App*.java</exlude>
+                        <exlude> **/com.mycompany.hangman.App.java</exlude>
+                    </exludes>
+                    </instrumentation>
                 </configuration>
                 <executions>
                     <execution>
