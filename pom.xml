@@ -51,15 +51,15 @@
                              <ignore>com.mycompany.hangman.App.java</ignore>
                              <ignore>com.mycompany.hangman.GameGui.java</ignore>
                         </ignores>
-                    <exludes>
-                        <exlude> com.mycompany.hangman.App*.java</exlude>
-                        <exlude> com.mycompany.hangman.GameGui*.java</exlude>
-                        <exlude> com.mycompany.hangman.**</exlude>
-                        <exlude> com.mycompany.hangman/**</exlude>
-                        <exlude> com.mycompany.hangman.App*.class</exlude>
-                        <exlude> **/com.mycompany.hangman.App*.java</exlude>
-                        <exlude> **/com.mycompany.hangman.App.java</exlude>
-                    </exludes>
+                    <excludes>
+                        <exclude> com.mycompany.hangman.App*.java</exclude>
+                        <exclude> com.mycompany.hangman.GameGui*.java</exclude>
+                        <exclude> com.mycompany.hangman.**</exclude>
+                        <exclude> com.mycompany.hangman/**</exclude>
+                        <exclude> com.mycompany.hangman.App*.class</exclude>
+                        <exclude> **/com.mycompany.hangman.App*.java</exclude>
+                        <exclude> **/com.mycompany.hangman.App.java</exclude>
+                    </excludes>
                     </instrumentation>
                 </configuration>
                 <executions>
