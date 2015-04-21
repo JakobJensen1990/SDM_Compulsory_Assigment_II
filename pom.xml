@@ -47,11 +47,11 @@
                     <instrumentation>
                        <ignores>
                             <ignore>**/src/main/**</ignore>
-                             <ignore>**/com.mycompany.hangman.DAL/**</ignore>
+                             <ignore>**/com.mycompany.hangman/**</ignore>
+                             <ignore>com.mycompany.hangman.App.java</ignore>
+                             <ignore>com.mycompany.hangman.GameGui.java</ignore>
                         </ignores>
-                    <excludes>
-                       
-                    </excludes>
+                    
                 </instrumentation>
                 </configuration>
                 <executions>
