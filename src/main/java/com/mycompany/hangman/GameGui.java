@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author André Thy10
  */
 public class GameGui {
-
+//random comment
     DALWord dalWord;
     boolean stillPlaying;
     String answer = "";
